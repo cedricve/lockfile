@@ -6,9 +6,15 @@ A service provider driver which properly locks the file session driver for Larav
 History
 ------------
 
-This issue was resolved with a pull request which was never integrated in the Laravel core, because the Laravel team wasn't able to reproduce it.
+This issue was resolved with a pull request that was never integrated in the Laravel core, because the Laravel team wasn't able to reproduce it.
 
 https://github.com/laravel/framework/pull/6848
+
+Some other topics regarding this issue.
+
+https://github.com/laravel/framework/issues/7549
+
+https://github.com/laravel/framework/issues/8172
 
 Usage
 ------------
