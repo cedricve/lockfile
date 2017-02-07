@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Cedricve\\Simpleauth\\": "src/"
+            "Cedricve\\Lockfile\\": "src/"
         }
     },
     "minimum-stability": "stable"
