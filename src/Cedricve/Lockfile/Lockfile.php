@@ -4,7 +4,7 @@ use Exception;
 use Symfony\Component\Finder\Finder;
 use Illuminate\Filesystem\Filesystem;
 
-class FileSessionHandler implements \SessionHandlerInterface {
+class Lockfile implements \SessionHandlerInterface {
 
 	/**
 	 * The current session ID that's open.
@@ -183,5 +183,4 @@ class FileSessionHandler implements \SessionHandlerInterface {
 			break;
 		}
 	}
-
 }

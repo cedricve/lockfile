@@ -19,12 +19,7 @@ class LockfileServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		$this->package('cedricverst/lockfile');
 
-		Session::extend('lockfile', function($app)
-		{
-		    return new Lockfile;
-		});
 	}
 
 	/**
@@ -34,7 +29,11 @@ class LockfileServiceProvider extends ServiceProvider
 	 */
 	public function register()
 	{
-
+		Session::extend('lockfile', function($app)
+		{
+			$path = $this->app['config']['session.files'];
+		    return new Lockfile($this->app['files'], $path);
+		});
 	}
 
 	/**
