@@ -1,7 +1,7 @@
 {
     "name": "cedricve/lockfile",
     "description": "A session driver which properly locks the file session driver for Laravel",
-    "keywords": ["authentication","auth","simple"],
+    "keywords": ["lock file","session"],
     "authors": [
         {
             "name": "Cédric Verstraeten",
